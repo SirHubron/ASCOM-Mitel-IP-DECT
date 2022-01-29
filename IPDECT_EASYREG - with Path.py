@@ -67,16 +67,13 @@ def number(dir): #Nummer Eingabe überpüfung
 
 def ipei(ipdi): #IPEI Eingabe überprüfen
     if len(ipdi) != 13:
-        lenipei = input('Die IPEI muss 13 stellen lang sein: ')
-        ipdi = lenipei
+        ipdi = input('Die IPEI muss 13 stellen lang sein: ')
     for i in range(0,12):
         if not ipdi[i].isdecimal():
-            decipei = input('Der Inhalt der IPEI müssen zahlen sein: ')
-            ipdi = decipei
+            ipdi = input('Der Inhalt der IPEI müssen zahlen sein: ')
     for i in ipdi[12]:
         if not ipdi[12].isdecimal and ipdi[12] != '*':
-            endipei = input('Der letzte Chrakter der IPEI muss eine Zahl oder ein * sein: ')
-            ipdi = endipei
+            ipdi = input('Der letzte Chrakter der IPEI muss eine Zahl oder ein * sein: ')
 
 
 
